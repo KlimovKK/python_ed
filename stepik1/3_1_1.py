@@ -14,7 +14,3 @@ def f(x):
         return - (x / 2)
     else:
         return (x - 2) ** 2 + 1
-
-
-#x = float(input())
-#print(f(x))
