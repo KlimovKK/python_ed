@@ -21,9 +21,3 @@ def modify_list(l):
             l.append(x // 2)
         l.remove(x)
 
-
-lst = [1, 2, 3, 4, 5, 6]
-print(modify_list(lst))
-print(lst)
-modify_list(lst)
-print(lst)
