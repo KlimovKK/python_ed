@@ -13,8 +13,17 @@ modify_list(lst)
 print(lst)               # [5, 4]
 Функция не должна осуществлять ввод/вывод информации.
 """
+
+
 def modify_list(l):
     for x in l[:]:
         if x % 2 == 0:
             l.append(x // 2)
         l.remove(x)
+
+
+lst = [1, 2, 3, 4, 5, 6]
+print(modify_list(lst))
+print(lst)
+modify_list(lst)
+print(lst)
