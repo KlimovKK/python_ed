@@ -18,3 +18,12 @@ def update_dictionary(d, key, value):
         d[key * 2].append(value)
     else:
         d[key * 2] = [value]
+
+
+d = {}
+print(update_dictionary(d, 1, -1))
+print(d)
+update_dictionary(d, 2, -2)
+print(d)
+update_dictionary(d, 1, -3)
+print(d)
