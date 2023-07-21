@@ -13,7 +13,8 @@
 Выходной файл, который при этом у вас получится, надо отправить в качестве ответа на эту задачу.
 """
 
-stroka = input()
+with open('dataset_3363_2.txt') as inf:
+    stroka = inf.readline().strip()
 
 result = ''
 i = 0
@@ -24,4 +25,5 @@ while i < len(stroka):
     result += stroka[i] * int(stroka[i + 1:j])
     i = j
 
-print(result)
+with open('result.txt', 'w') as ouf:
+    ouf.write(result)
