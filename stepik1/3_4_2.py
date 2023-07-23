@@ -10,6 +10,11 @@
 
 text = input().lower().split()
 
-
-
-print(text)
+maxc = 0
+text.sort()
+for word in text:
+    amount = text.count(word)
+    if amount > maxc:
+        maxc = amount
+        freq_word = word
+print(freq_word + ' ' +str(maxc))
