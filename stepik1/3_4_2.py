@@ -8,7 +8,8 @@
 Слова, написанные в разных регистрах, считаются одинаковыми.
 """
 
-text = input().lower().split()
+with open('dataset_3363_3.txt') as inf:
+    text = inf.read().lower().strip().split()
 
 maxc = 0
 text.sort()
@@ -17,4 +18,5 @@ for word in text:
     if amount > maxc:
         maxc = amount
         freq_word = word
-print(freq_word + ' ' +str(maxc))
+
+print(freq_word + ' ' + str(maxc))
