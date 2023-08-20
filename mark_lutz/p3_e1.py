@@ -1,6 +1,6 @@
 S = input()
-sum1 = 0
+L = []
 for i in S:
-    sum1 += ord(i)
+    L += [ord(i)]
 
-print(sum1)
+print(L)
