@@ -1,6 +1,6 @@
 S = input()
 L = []
 for i in S:
-    L += [ord(i)]
+    L.append(ord(i))
 
 print(L)
