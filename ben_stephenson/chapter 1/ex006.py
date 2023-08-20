@@ -16,4 +16,4 @@ tips = 0.18
 order = float(input('Введите сумму заказа: '))
 order_tax = order * tax
 order_tips = order * tips
-print('Налог - $%.2f, чаевые - $%.2f. Итог: $%.2f.' % (order_tax, order_tips, (order + order_tips + order_tax)))
+print(f'Налог - ${order_tax: <.2f}, чаевые - ${order_tips: <.2f}. Итог: ${(order + order_tips + order_tax): <.2f}.')
