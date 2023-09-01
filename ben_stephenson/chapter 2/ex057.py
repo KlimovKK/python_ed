@@ -23,7 +23,7 @@ SMS_PRICE = 0.15
 TAX911 = 0.44
 TAX = 0.05
 
-tax_sum = (BASE_TARIFF + TAX911) * TAX
+result = BASE_TARIFF + TAX911
 
 minutes = int(input('Сколько минут израсходовано за месяц? '))
 sms = int(input('Сколько sms израсходовано за месяц? '))
@@ -32,14 +32,17 @@ print(f'Базовый тариф: ${BASE_TARIFF}')
 
 if minutes > MIN_LIM:
     min_sum = (minutes - MIN_LIM) * MIN_PRICE
-    tax_sum += min_sum * TAX
-    print(f'Плата за дополнительные минуты: ${min_sum}')
+    result += min_sum
+    print(f'Плата за дополнительные минуты: ${min_sum:.2f}')
 
 if sms > SMS_LIM:
     sms_sum = (sms - SMS_LIM) * SMS_PRICE
-    tax_sum += sms_sum * TAX
-    print(f'Плата за дополнительные sms: ${sms_sum}')
+    result += sms_sum
+    print(f'Плата за дополнительные sms: ${sms_sum:.2f}')
+
+tax_sum = result * TAX
+result += tax_sum
 
 print(f'Сумма отчислений кол-центрам 911 ${TAX911}')
 print(f'Сумма налога: ${tax_sum:.2f}')
-print(f'Итого к оплате: ${BASE_TARIFF + TAX911 + min_sum + sms_sum:.2f}')
+print(f'Итого к оплате: ${result:.2f}')
