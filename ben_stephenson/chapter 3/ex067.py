@@ -12,6 +12,7 @@
 """
 
 perimeter = 0
+
 x_start = input('Введите первую координат X: ')
 y_start = float(input('Введите первую координату Y: '))
 x2 = input('Введите следующую координату X (Enter для окончания ввода): ')
@@ -22,21 +23,11 @@ y1 = y_start
 while x2 != '':
     y2 = float(input('Введите следующую координату Y: '))
     x2 = float(x2)
-    if x1 == x2:
-        perimeter += y2 - y1
-    elif y1 == y2:
-        perimeter += x2 - x1
-    else:
-        perimeter += ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+    perimeter += ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
     x1 = x2
     y1 = y2
     x2 = input('Введите следующую координату X (Enter для окончания ввода): ')
 
-if x1 == float(x_start):
-    perimeter += y_start - y1
-elif y1 == y_start:
-    perimeter += float(x_start) - x1
-else:
-    perimeter += ((float(x_start) - x1) ** 2 + (y_start - y1) ** 2) ** 0.5
+perimeter += ((float(x_start) - x1) ** 2 + (y_start - y1) ** 2) ** 0.5
 
-print(perimeter)
+print('Периметр многоугольника равен', perimeter)
