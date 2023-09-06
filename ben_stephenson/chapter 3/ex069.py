@@ -31,3 +31,7 @@ while age != '':
         price = AGED_PRICE
     else:
         price = ADULT_PRICE
+    total += price
+    age = input('Введите возраст следующего посетителя (пустая строка для завершения): ')
+
+print(f'Общая стоимость билетов для этой группы ${total:.2f}')
