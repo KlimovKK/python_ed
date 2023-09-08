@@ -60,7 +60,7 @@ print(maximum)
 #  Количество смен максимального значения
 qty = 0
 
-for i in range(1, 100):
+for i in range(LOW_LIMIT, UPP_LIMIT):
     num = randint(LOW_LIMIT, UPP_LIMIT)
     print(num)
     if maximum < num:
