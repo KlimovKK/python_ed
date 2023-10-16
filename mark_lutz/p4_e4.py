@@ -11,11 +11,13 @@
 """
 
 
-def adder(good=1, bad=2, ugly=3):
-    return good + bad + ugly
+def adder(**args):
+    args = list(args.values())
+    res = args[0]
+    for arg in args[1:]:
+        res += arg
+    return res
 
 
-print(adder())
-print(adder(8))
-print(adder(ugly=4))
-print(adder(3, 5))
+print(adder(a=4, b=2, c=1, d=8))
+print(adder(a='aa', b='bb', c='12', d='qwerty'))
