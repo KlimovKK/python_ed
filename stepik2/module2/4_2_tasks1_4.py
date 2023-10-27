@@ -1,4 +1,4 @@
-"""INTERVAL_MIN = -1
+INTERVAL_MIN = -1
 INTERVAL_MAX = 17
 
 x = int(input())
@@ -7,10 +7,10 @@ if INTERVAL_MIN < x < INTERVAL_MAX:
     res = 'Принадлежит'
 else:
     res = 'Не принадлежит'
-print(res)"""
+print(res)
 
 
-"""INTERVAL1 = -3
+INTERVAL1 = -3
 INTERVAL2 = 7
 
 x = int(input())
@@ -19,10 +19,10 @@ if x <= INTERVAL1 or x >= INTERVAL2:
     res = 'Принадлежит'
 else:
     res = 'Не принадлежит'
-print(res)"""
+print(res)
 
 
-"""INTERVAL1_MIN = -30
+INTERVAL1_MIN = -30
 INTERVAL1_MAX = -2
 INTERVAL2_MIN = 7
 INTERVAL2_MAX = 25
@@ -33,7 +33,7 @@ if (INTERVAL1_MIN < x <= INTERVAL1_MAX) or (INTERVAL2_MIN < x <= INTERVAL2_MAX):
     res = 'Принадлежит'
 else:
     res = 'Не принадлежит'
-print(res)"""
+print(res)
 
 
 num = int(input())
