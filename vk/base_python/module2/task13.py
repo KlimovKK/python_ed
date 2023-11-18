@@ -10,7 +10,14 @@ def cache_deco(func):
     return wrapper
 
 
-# my_dict = {}
+def solution(func_map, func_filter, data):
+    for i, el in enumerate(map(func_map, filter(func_filter, data))):
+        if i % 2 == 0:
+            yield el
+
+
+my_dict = {}
+
 # code = []
 # while data := input():
 #     code.append(data)

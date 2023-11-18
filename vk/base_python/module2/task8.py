@@ -8,8 +8,8 @@ def repeat_deco(n=1):
     return my_decorator
 
 
-code = []
-while data := input():
-    code.append(data)
-code = "\n".join(code)
-exec(code)
+# code = []
+# while data := input():
+#     code.append(data)
+# code = "\n".join(code)
+# exec(code)
