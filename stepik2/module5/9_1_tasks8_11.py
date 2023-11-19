@@ -1,5 +1,5 @@
 #  Сколько раз?
-"""CHAR_1 = '+'
+CHAR_1 = '+'
 CHAR_2 = '*'
 
 line = input()
@@ -13,22 +13,22 @@ for c in line:
         count_char_2 += 1
 
 print(f'Символ {CHAR_1} встречается {count_char_1} раз')
-print(f'Символ {CHAR_2} встречается {count_char_2} раз')"""
+print(f'Символ {CHAR_2} встречается {count_char_2} раз')
 
 
 #  Одинаковые соседи
-"""line = input()
+line = input()
 
 count = 0
 for i in range(- len(line), -1):
     if line[i] == line[i + 1]:
         count += 1
 
-print(count)"""
+print(count)
 
 
 #  Гласные и согласные
-"""VOWELS = 'уеыаоэяиюёУЕЫАОЭЯИЮЁ'
+VOWELS = 'уеыаоэяиюёУЕЫАОЭЯИЮЁ'
 CONSONANTS = 'йцкнгшщзхфвпрлджчсмтбЙЦКНГШЩЗХФВПРЛДЖЧСМТБ'
 
 line = input()
@@ -41,7 +41,7 @@ for c in line.lower():
         cnt_consonants += 1
 
 print('Количество гласных букв равно', cnt_vowels)
-print('Количество согласных букв равно', cnt_consonants)"""
+print('Количество согласных букв равно', cnt_consonants)
 
 
 #  Decimal to Binary
