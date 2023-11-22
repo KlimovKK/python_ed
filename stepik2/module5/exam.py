@@ -1,5 +1,5 @@
 #  Каждый третий
-"""line = input()
+line = input()
 
 print(''.join([line[i] for i in range(len(line)) if i % 3 != 0]))
 
@@ -14,23 +14,23 @@ for i in range(n):
 
     new_s += s[i]
 
-print(new_s)"""
+print(new_s)
 
 
 #  Замени меня полностью
-"""line = input()
+line = input()
 
-print(line.replace('1', 'one'))"""
+print(line.replace('1', 'one'))
 
 
 #  Удали меня полностью
-"""line = input()
+line = input()
 
-print(line.replace('@', ''))"""
+print(line.replace('@', ''))
 
 
 #  Второе вхождение
-"""line = input()
+line = input()
 
 first_index = line.find('f')
 second_index = line.find('f', first_index + 1)
@@ -39,7 +39,7 @@ if first_index != - 1:
 else:
     res = first_index + second_index
 
-print(res)"""
+print(res)
 
 
 #  Переворот
