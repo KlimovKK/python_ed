@@ -1,5 +1,5 @@
 #  Найти всех
-"""# объявление функции
+# объявление функции
 def find_all(target, symbol):
     result = []
     for i, el in enumerate(target):
@@ -13,11 +13,11 @@ s = input()
 char = input()
 
 # вызываем функцию
-print(find_all(s, char))"""
+print(find_all(s, char))
 
 
 #  Merge lists 1
-"""# объявление функции
+# объявление функции
 def merge(list1, list2):
     result = list1 + list2
     result.sort()
@@ -29,7 +29,7 @@ numbers1 = [int(c) for c in input().split()]
 numbers2 = [int(c) for c in input().split()]
 
 # вызываем функцию
-print(merge(numbers1, numbers2))"""
+print(merge(numbers1, numbers2))
 
 
 #  Merge lists 2
