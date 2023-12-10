@@ -21,8 +21,8 @@ class SemiCircle(Circle):
         return super().calculate_area() / 2
 
 
-code = []
-while data := input():
-    code.append(data)
-code = "\n".join(code)
-exec(code)
+# code = []
+# while data := input():
+#     code.append(data)
+# code = "\n".join(code)
+# exec(code)

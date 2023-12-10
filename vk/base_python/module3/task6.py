@@ -25,8 +25,8 @@ class CircleWithMixin(CalculateCircleLengthMixin, Circle):
     pass
 
 
-code = []
-while data := input():
-    code.append(data)
-code = "\n".join(code)
-exec(code)
+# code = []
+# while data := input():
+#     code.append(data)
+# code = "\n".join(code)
+# exec(code)
