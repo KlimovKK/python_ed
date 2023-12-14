@@ -9,8 +9,8 @@ def fill_specializations(specializations: List[Tuple[str, str]]):
     return dict(specs_dict)
 
 
-code = []
-while data := input():
-    code.append(data)
-code = "\n".join(code)
-exec(code)
+# code = []
+# while data := input():
+#     code.append(data)
+# code = "\n".join(code)
+# exec(code)
