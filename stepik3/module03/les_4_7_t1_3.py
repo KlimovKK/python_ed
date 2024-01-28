@@ -1,5 +1,5 @@
 #  Сложение матриц
-"""def print_matrix(matrix, n, m, width=1):
+def print_matrix(matrix, n, m, width=1):
     for r in range(n):
         for c in range(m):
             print(str(matrix[r][c]).ljust(width), end=' ')
@@ -16,10 +16,10 @@ for i in range(n):
     for j in range(m):
         result_matrix[i][j] = matrix_1[i][j] + matrix_2[i][j]
 
-print_matrix(result_matrix, n, m)"""
+print_matrix(result_matrix, n, m)
 
 #  Умножение матриц
-"""def print_matrix(matrix, n, m, width=1):
+def print_matrix(matrix, n, m, width=1):
     for r in range(n):
         for c in range(m):
             print(str(matrix[r][c]).ljust(width), end=' ')
@@ -38,7 +38,7 @@ for i in range(n):
         for g in range(m):
             result_matrix[i][j] += matrix_1[i][g] * matrix_2[g][j]
 
-print_matrix(result_matrix, n, k)"""
+print_matrix(result_matrix, n, k)
 
 
 #  Возведение матрицы в степень
